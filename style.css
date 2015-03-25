@@ -1,0 +1,28 @@
+html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+#searchbar{
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    left:5px;
+}
+
+#list{
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right:5px;
+    background-color: beige;
+}
+
+input{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    height: 2.5em;
+    padding: 0;
+    margin: 0;
+    vertical-align: text-bottom;
+}
