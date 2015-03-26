@@ -2,12 +2,15 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="jquery-ui.min.css" type="text/css"/>
+
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js">
     </script>
-    <script type="text/javascript" src="map.js"></script>
     <script type="text/javascript" src="knockout.js"></script>
     <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="knockout-jqueryui.min.js"></script>
 
 </head>
 <body>
@@ -22,9 +25,13 @@
 </div>
 <div id="searchbar">
     <!--<span data-bind="text:condition"></span>-->
-    <input type="text" data-bind="value: condition"/>
+    <input id="userinput" type="text" data-bind="autocomplete: { source: items, select: onSelect,  position: {
+        my: 'left bottom',
+    at: 'left top'
+    } }"/>
     <button data-bind="click: function () {beginSearch($root.condition())}">search</button>
 </div>
+<script type="text/javascript" src="map.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

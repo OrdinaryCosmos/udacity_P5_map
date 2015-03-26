@@ -64,6 +64,12 @@ function initialize() {
 
     function AppViewModel()  {
         var self=this;
+        self.items =  [
+            'New York Stock Exchange',
+            'New York University',
+            'New York City Hall',
+            'IFC Center'
+        ];
         self.places = ko.observableArray(['New York Stock Exchange', 'New York University','New York City Hall','IFC Center' ]);
         self.condition= ko.observable(),
         self.beginSearch=function(keyword) {
@@ -80,7 +86,9 @@ function initialize() {
                 }
             };
     };
-
+    AppViewModel.prototype.onSelect = function(ev, ui) {
+        this.condition(ui.item.value);
+    };
     ko.applyBindings(new AppViewModel());
 
 
