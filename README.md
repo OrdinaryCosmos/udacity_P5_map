@@ -11,4 +11,8 @@ likes it got on foursquare.
 3. You can also activate this info window by click on the "Details" button in the list at the pper-right corner of the map.
 After being clicked, the corresponding info window will pop up.
 
-4.At the lower-left corner is a search bar which has the auto-completion function.After the user begins to type, the names of the landmarks which contain the same letters users have type will appear above the search bar.User can select the landmarks they want to know more about and click search, which will make the corresponding landmark pop up in the map.
+4. At the lower-left corner is a search bar which has the auto-completion
+ function.After the user begins to type, the names of the landmarks which
+ contain the same letters users have type will appear above the search
+ bar.User can select the landmarks they want to know more about and click
+ search, which will make the corresponding landmark pop up in the map.
